@@ -1,0 +1,116 @@
+body{
+    background:#31353C ;
+}
+.contenedorLimite{
+    /* border: 1px solid white; */
+    padding: 32px 15px;
+    display: grid;
+    grid-template-columns: minmax(auto, 1024px);/*  CUAL QUIERES QUE SEA EL ESPACIO MAXIMO DE TRABAJO */
+    justify-content: center;
+}
+.contenedorGrid{
+    border: 5px solid rgba(255, 255, 255, 0.16);
+    background: #262A2E;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas: "titulo titulo"                         
+                         "pendientes agregar"                         
+                         "pendientes agregar";
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.contenedorTitulo{
+    border-bottom: 1px solid white;
+    height: 10vh;
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+}
+.contenedorTareasPendientes{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 5px solid rgb(47, 224, 255);
+    grid-area: pendientes;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.contenedorAgregarTareas{
+    padding: 10px;
+    display: flex;
+    border: 5px solid rgb(47, 224, 255);
+    grid-area: agregar;
+    flex-direction: column;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+h1{
+    font-family: sans-serif;
+    color: white;
+    font-size: xx-large;
+}
+h2{
+    font-family: sans-serif;
+    color: white;
+    font-size: larger;
+}
+input{
+    height: 25px;
+    padding: 5px;
+    text-decoration: none;
+    outline:none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+button{
+    height: 40px;
+    margin-top: 5px;
+    background: #0D6EFD;
+    border:none;
+    color:white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+button:hover{
+    background: #0e64e4;
+}
+img{
+    width: 30px;
+    margin-right: 10px;
+}
+.componenteTarea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid white;
+    padding: 0px 10%;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
